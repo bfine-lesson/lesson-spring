@@ -2,7 +2,6 @@ package com.lesson.spring.hotel.service;
 
 import com.lesson.spring.hotel.api.dto.ApiRequestDto;
 import com.lesson.spring.hotel.dao.HotelDao;
-import com.lesson.spring.hotel.dao.HotelDaoImpl;
 import com.lesson.spring.hotel.domain.Hotel;
 import com.lesson.spring.hotel.service.dto.HotelServiceResponseDto;
 import java.time.LocalDate;

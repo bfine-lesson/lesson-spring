@@ -1,7 +1,5 @@
 package com.lesson.spring.hotel.domain;
 
-import lombok.AllArgsConstructor;
-
 public enum Rating {
 
     STAR1("1성"),

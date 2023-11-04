@@ -2,7 +2,6 @@ package com.lesson.spring.hotel.service.dto;
 
 import com.lesson.spring.hotel.domain.Hotel;
 import com.lesson.spring.hotel.domain.Rating;
-
 import java.time.LocalDate;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

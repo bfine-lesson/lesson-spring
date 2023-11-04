@@ -1,6 +1,5 @@
 package com.lesson.spring.hotel.dao;
 
-import com.lesson.spring.hotel.api.dto.ApiRequestDto;
 import com.lesson.spring.hotel.domain.Hotel;
 import java.util.List;
 import org.springframework.jdbc.core.JdbcTemplate;
