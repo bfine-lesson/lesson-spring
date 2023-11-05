@@ -87,6 +87,7 @@ Model과 View의 중간에서 상호작용을 해주는 역할을 한다.
 ### 8. Servlet Filter 와 Spring Interceptor 차이를 설명해보세요 (옵션)
 
 ~~~
-
+Filter는 J2EE 표준 스펙으로, 스프링 컨테이너가 아닌 톰캣과 같은 웹 컨테이너에 의해 관리된다.
+반면에 Intercepter는 Spring이 제공하는 기술로써, 스프링 컨텍스트에서 동작한다.  
 ~~~
 
