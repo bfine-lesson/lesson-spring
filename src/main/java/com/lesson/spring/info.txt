@@ -1,0 +1,13 @@
+create table order (
+id bigint not null primary key auto increment,
+state varchar(20),
+order_date datetime,
+total_amounts bigint,
+user_id varchar(50),
+user_name varchar(50),
+shipping_zip_code varchar(6),
+shipping_addr varchar(100),
+shipping_message varchar(200),
+receiver_name varchar(50),
+receiver_phone varchar(50)ßßß
+)

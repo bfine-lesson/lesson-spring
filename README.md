@@ -1,6 +1,6 @@
 ### 1. SQL Mapper vs ORM 의 차이와 JPA에 대해 설명해보세요
 ~~~
- 
+ test 
 ~~~
 --- 
 
