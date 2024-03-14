@@ -1,0 +1,90 @@
+리스트
+Q1. 문자열 길이에 따라 내림차순 정렬[길이가 같은 경우 영어 오름차순]
+"banana", "apple", "korea", "newjeans" , "oak", "spring", "luxury"
+
+Q2. 다음 객체 num 오름차순 [같은 경우 우선순위가 높은것]
+- Num(num = “5”, priority = 1)
+- Num(name = “8”, priority = 1)
+- Num(name = “10”, priority = 1)
+- Num(name = “10”, priority = 2)
+- Num(name = “1”, priority = 2)
+- Num(name = “1”, priority = 1)
+- Num(name = “1”, priority = 3)
+
+Q3. 다음 Car를 구현한 객체들의 판매가격 오름차순 [같은 경우 출고월이 빠른순]
+    (deliveryDate는 YearMonth 타입)
+    interface Car -> Class Tesla , Class BMW, Class Audi
+
+-Tesla(name = "모델3", price = 500, deliveryDate=2023-11)
+-BMW(name = "320i", price = 600, deliveryDate=2023-12)
+-Audi(name = "A4", price = 500, deliveryDate=2023-10)
+-Tesla(name = "모델S", price = 700, deliveryDate=2023-09)
+-BMW(name = "X5", price = 800, deliveryDate=2023-11)
+-Audi(name = "Q5", price = 700, deliveryDate=2023-12)
+-Tesla(name = "모델Y", price = 600, deliveryDate=2023-10)
+
+map.
+Q1. 같은 호텔인 경우 각각의 리스트로 변경
+- Hotel(name = “신라”, price = 10000)
+- Hotel(name = “롯데”, price = 20000)
+- Hotel(name = “신라”, price = 25000)
+- Hotel(name = “롯데”, price = 30000)
+- Hotel(name = “신라”, price = 25000)
+
+List[Hotel(name = “신라”, price = 10000), Hotel(name = “신라”, price = 25000), Hotel(name = “신라”, price = 25000)]
+
+List[Hotel(name = “롯데”, price = 20000), Hotel(name = “롯데”, price = 30000)]
+
+Q2. name 호텔이름인경우 합산하여 1개의 객체를 만들어주시면 됩니다. 즉 이름별로 하나의 객체만 생성됨
+- Hotel(name = “신라”, price = 10000)
+- Hotel(name = “롯데”, price = 20000)
+- Hotel(name = “신라”, price = 25000)
+- Hotel(name = “롯데”, price = 30000)
+- Hotel(name = “신라”, price = 25000)
+
+List[Hotel(name = “신라”, price = 60000), Hotel(name = “롯데”, price = 50000)]
+
+
+- Set
+Q1. 중복 제거
+- CoffeeShop(name = "커피빈",location = "서울")
+- CoffeeShop(name = "스타벅스",location = "서울")
+- CoffeeShop(name = "메카커피",location = "서울")
+- CoffeeShop(name = "커피빈",location = "서울")
+- CoffeeShop(name = "스타벅스",location = "서울")
+- CoffeeShop(name = "메가커피",location = "서울")
+- CoffeeShop(name = "커피빈",location = "경기")
+- CoffeeShop(name = "스타벅스",location = "경기")
+- CoffeeShop(name = "메가커피",location = "경기")
+- CoffeeShop(name = "메가커피",location = "경기")
+
+- Queue
+Q1. 오마카세 음식점이 있고 아침 점심 저녁 3번의 식사시간을 가지며 각각 식사시간 마다 입장 인원수에 제한이 있다.
+    손님들은 온 순서대로 번호를 가지는데 각 식사 시간에 어떤 손님들이 입장하는지 출력하세요
+
+예) 오전 3명, 오후 5명, 저녁 6명 / 손님 리스트 {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}
+
+오전 1, 2,3
+
+오후 4,5,6,7,8
+
+저녁 9, 10, 11, 12, 13, 14
+
+- Stack
+Q1. 문자열을 압축해서 출력하세요 예) BBAAGGCNNNNN ⇒ B2A2G2CN5
+
+1. Abstract Class Weapon 가 있고 attack 이라는 추상메서드를 가진다.
+
+ 이를 구현한 Class Sward , Cane, Bow 가 있다 . 아래 내용을 출력해보세요
+
+=== 공격 시작 ===
+5번의 공격
+=== 공격 종료 ===
+
+Sward : 검을 휘두른다
+Cane : 마법을 사용한다
+Bow : 화살을 쏜다.
+
++ 출력은 추상클래스의 메서드로 진행 공격 개수는 추상메서드의 파라미터로 받음
+
+자바 책 - map

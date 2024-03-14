@@ -1,0 +1,14 @@
+
+User
+user -> board
+한 유저가 여러개의 게시글을 가질 수 있음
+OneToMany
+
+user -> comment
+한 유저가 여러개의 댓글을 가질 수 있음
+OneToMany
+
+user -> like
+한 유저가 게시글 하나의 '좋아요'를 가질 수 있음
+OneToOne
+
