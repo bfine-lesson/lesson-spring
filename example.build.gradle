@@ -1,0 +1,62 @@
+group 'com.lesson.spring'
+version '1.0.0'
+
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    java {
+        sourceCompatibility = '17'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compileOnly 'org.projectlombok:lombok'
+        annotationProcessor 'org.projectlombok:lombok'
+    }
+
+    configurations {
+        compileOnly {
+            extendsFrom annotationProcessor
+        }
+    }
+
+}
+
+repositories {
+    mavenCentral()
+}
+
+//dependencies {
+//    implementation 'org.springframework.boot:spring-boot-starter-web'
+//    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+//
+//    // database
+//    compileOnly 'org.projectlombok:lombok'
+//    runtimeOnly 'com.h2database:h2'
+//    runtimeOnly 'com.mysql:mysql-connector-j'
+//
+//    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.2'
+//
+//    implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'
+//
+//
+//    // etc
+//    annotationProcessor 'org.projectlombok:lombok'
+//    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+//
+//    // test
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.2'
+//}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

@@ -1,0 +1,11 @@
+
+logging:
+  level:
+    root: info
+
+server:
+  port: 8081
+
+spring:
+  jpa:
+    show-sql: true

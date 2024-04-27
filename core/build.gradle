@@ -1,0 +1,12 @@
+
+group 'com.lesson.spring'
+version '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api('org.springframework.boot:spring-boot-starter-data-jpa')
+    runtimeOnly 'com.h2database:h2'
+}
