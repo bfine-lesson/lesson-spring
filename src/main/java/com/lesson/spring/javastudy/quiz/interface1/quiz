@@ -1,0 +1,26 @@
+# Interface
+
+**`Employee`**이라는 인터페이스를 작성
+
+- **`calculateSalary`**라는 추상 메서드를 선언하세요.
+
+각각의 클래스는
+
+- 시급 상수를 가진다. (변수명 : TIME_MONEY)
+- private static long 으로 선언 (하드코딩 )
+- 일한시간을 가진다. (변수명 : workedHours)
+
+**`FullTimeEmployee`** 클래스를 작성
+
+- **`Employee`** 인터페이스를 구현하세요.
+- **`calculateSalary`** 메서드를 오버라이드하여 정규직 직원의 월급을 계산하고 출력하세요.
+
+PartTimeEmployee**` 클래스를 작성하세요.
+
+- **`Employee`** 인터페이스를 구현하세요.
+- **`calculateSalary`** 메서드를 오버라이드하여 시간제 직원의 월급을 계산하고 출력하세요.
+
+Main 클래스를 만들고, **`main`** 메서드에서 다음을 수행하세요
+
+- **`FullTimeEmployee`** 객체를 생성하고 **`calculateSalary`** 호출하여 일한시간에 대한 급여를 출력
+- ````Part**TimeEmployee**` 객체를 생성하고 **`calculateSalary`** 호출하여 일한시간에 대한 급여를 출력

@@ -1,0 +1,38 @@
+- Enrolment 수강신청
+- Lesson 강의, LessonDetail 강의상세 (주차별 내용)
+- Student 학생, Profesor 교수
+1. 연관관계를 생각해보세요
+2. 수강신청 내역을 조회하는 API 만들어보세요
+- 하나의 API / 요청한 교수에 해당하는 수강신청내역 / 학생에 해당하는 수강신청내역
+
+lessonDetail - 주차별
+
+- 조건
+1. 하나의 강의 여러명 교수 가능
+
+2. 학생 여러 강의 신청 가능
+
+//
+3. 학생이 듣는 과목의 교수들
+-----------------------------------------------
+student <-> professor
+
+student -> Enrolment
+
+Enrolment <- lesson
+
+professor <-> lesson
+
+professor -> lesson
+
+lesson -> LessonDetail
+
+student
+
+
+
+
+
+
+
+

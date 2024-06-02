@@ -1,0 +1,15 @@
+/**
+ * *LinkedList
+ * List interface
+ *
+ * index로 값을 빠르게 찾을 떄  -> ArrayList
+ * ArrayList(not synchronize), Vector(synchronize, multi-thread, thread-safe)
+ *
+ */
+
+
+// Array 장점 + List 장점 -> 유연하면서도 빠르게 값을 찾아 낼 수 있음 -> Map
+// Map : key -> hash function -> hash -> bucket index -> Data -> 충돌 시 List -> Data
+// HashMap : Not Synchronized
+// HashTable : Synchronized
+// ConcurrentHashMap : Synchronized, thread-safe, highly-concurrent

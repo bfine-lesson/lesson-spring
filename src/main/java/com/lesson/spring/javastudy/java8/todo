@@ -1,0 +1,20 @@
+
+1. toMap
+2. groupingBy
+
+// (groupingBy)
+Q1. dog
+key : age -> value : dog list
+
+Q2. 호텔 날짜, 금액, 소유자
+같은 숙박일 같은 소유자 인 호텔들을 묶을거임
+
+// (toMap)
+Q1.  dog -> key = name, value = age
+
+// CollectAndThen
+
+// Joining
+Q1. List.of("농심", "롯데","해태") -> 결과물이 "농심 - 롯데 - 해태"
+
+// git clone vs fork 차이점

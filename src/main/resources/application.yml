@@ -5,11 +5,18 @@ logging:
 
 spring:
   datasource:
-    hikari:
-      jdbc-url: jdbc:mysql://localhost:3306/test
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      username: root
-      password: hr
+    url: jdbc:h2:tcp://localhost/~/enrollment
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  #  datasource:
+#    hikari:
+#      jdbc-url: jdbc:mysql://localhost:3306/test
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      username: root
+#      password: hr
+
   jpa:
     show-sql: false
     hibernate:
