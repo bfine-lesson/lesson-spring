@@ -8,7 +8,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh "docker build -t ${APP_NAME}:${TAG} ."
+                    sh "docker build -t ${APP_NAME}:${tag} ."
                 }
             }
         }
