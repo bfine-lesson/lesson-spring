@@ -22,7 +22,7 @@ pipeline {
                         """
 
                     sh """
-                          docker run -d --name ${APP_NAME} -p 8080:8080 ${APP_NAME}:${TAG}
+                          docker run -d --name ${APP_NAME} -p 8081:8081 ${APP_NAME}:${TAG}
                         """
                 }
             }
