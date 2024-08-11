@@ -9,6 +9,7 @@ pipeline {
             steps {
                 script {
                     sh "cd domestic"
+                    sh "pwd"
                     sh "docker build -t ${APP_NAME}:${tag} ."
                 }
             }
