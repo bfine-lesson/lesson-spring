@@ -15,7 +15,7 @@ RUN ./gradlew clean :domestic:build --no-daemon
 FROM openjdk:17-jdk-slim
 
 # 3. 빌드 단계에서 생성된 JAR 파일을 실행 단계로 복사
-COPY --from=builder /domestic/build/libs/*.jar /app.jar
+COPY --from=builder /app/domestic/build/libs/*.jar /app.jar
 
 # 4. 컨테이너에서 사용할 포트 노출
 EXPOSE 8080
