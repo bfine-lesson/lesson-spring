@@ -8,9 +8,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh "cd domestic"
-                    sh "pwd"
-                    sh "docker build -t ${APP_NAME}:${tag} ."
+                    sh "docker build -t ${APP_NAME}:${tag} -f domestic/Dockerfile ."
                 }
             }
         }
