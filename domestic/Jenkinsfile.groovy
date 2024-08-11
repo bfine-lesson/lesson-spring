@@ -8,6 +8,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
+                    sh "cd domestic"
                     sh "docker build -t ${APP_NAME}:${tag} ."
                 }
             }
