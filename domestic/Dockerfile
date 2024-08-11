@@ -2,7 +2,7 @@ FROM openjdk:17-jdk-slim
 
 VOLUME /tmp
 
-CMD ["./gradlew", ":domestic:build"]
+CMD ["./gradlew", "build"]
 
 ARG JAR_FILE=build/libs/domestic-0.0.1-SNAPSHOT.jar
 
