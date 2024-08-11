@@ -4,9 +4,7 @@ VOLUME /tmp
 
 CMD ["./gradlew", "build"]
 
-ARG JAR_FILE=build/libs/domestic-0.0.1-SNAPSHOT.jar
-
-CMD ["pwd"]
+ARG JAR_FILE=domestic/build/libs/domestic-0.0.1-SNAPSHOT.jar
 
 COPY ${JAR_FILE} myapp.jar
 
